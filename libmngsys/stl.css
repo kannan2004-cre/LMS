@@ -1,0 +1,80 @@
+/* Add your Home CSS styles here */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+
+#home {
+    background-color: #fff; 
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px; /* Larger font size for the main heading */
+    font-weight: bold; /* Bold text for the main heading */
+    color: #000000; /* White text color for the main heading */
+}
+
+h2 {
+    font-size: 24px; /* Font size for subheadings */
+    font-weight: bold; /* Bold text for subheadings */
+    color: #000000; /* White text color for subheadings */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+    color: #010000; /* White text color for paragraphs */
+}
+
+footer {
+    background-color: #333; /* Dark background color for the footer */
+    color: #fff; /* White text color for the footer */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add any additional styling as needed */
+

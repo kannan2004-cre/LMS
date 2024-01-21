@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System - Book Borrowing</title>
+    <link rel="stylesheet" href="bb.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="ind.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="book-borrowing">
+            <h2>Book Borrowing</h2>
+            <form>
+                <label for="borrow-book">Book:</label>
+                <select id="borrow-book" name="borrow-book">
+                    <option value="">Select a book</option>
+                    <!-- Populate this list with books from the database -->
+                </select><br><br>
+                <label for="borrow-date">Borrow Date:</label>
+                <input type="date" id="borrow-date" name="borrow-date"><br><br>
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return-date"><br><br>
+                <input type="submit" value="Borrow Book">
+            </form>
+        </section>
+    </main>
+    <script src="jbb.js"></script>
+</body>
+</html>

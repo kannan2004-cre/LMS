@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search - Nirmala Library</title>
+    <link rel="stylesheet" href="bs.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="ind.html">Home</a></li>
+                <li><a href="book-borrow.html">Book Borrowing</a></li>
+                <li><a href="book-reservation.html">Book Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="book-search">
+            <h2>Book Search</h2>
+            <form>
+                <label for="book-title">Title:</label>
+                <input type="text" id="book-title" name="book-title" placeholder="Enter book title"><br><br>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" placeholder="Enter author name"><br><br>
+                <label for="genre">Genre:</label>
+                <select id="genre" name="genre">
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="romance">Romance</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                </select><br><br>
+                <input type="submit" value="Search">
+            </form>
+            <ul id="book-list"></ul>
+        </section>
+    </main>
+    <script src="jb.css"></script>
+</body>
+</html>
