@@ -1,169 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirmala College Library Management System - Login</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #ecf0f1;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .container-fluid {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            height: 100vh;
-        }
-
-        .left-section {
-            position: relative;
-            text-align: left;
-            padding: 20px;
-            color: #fff;
-            background: url('https://i.imgur.com/onbpwet.jpeg') center center no-repeat;
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .left-section h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .login-container {
-            max-width: 300px;
-            padding: 16px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background: linear-gradient(45deg, #deee65, #d5986a);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease-in-out;
-        }
-
-        .login-container:hover {
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .login-container .login-form input[type="text"],
-        .login-container .login-form input[type="password"] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 3px solid #3498db;
-            border-radius: 5px;
-            background-color: #ecf0f1; /* Background color combination */
-            transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-        }
-
-        .login-container .login-form input[type="text"]:focus,
-        .login-container .login-form input[type="password"]:focus {
-            border-color: #2980b9;
-            background-color: #fff;
-        }
-
-        .login-container .login-form input[type="submit"] {
-            background-color: #2ecc71;
+            background: linear-gradient(to right, #66fffc, #5e91ff);
             color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            border-radius: 5px;
-            transition: background-color 0.3s ease-in-out;
         }
-
-        .login-container .login-form input[type="submit"]:hover {
-            background-color: #27ae60;
+        .card {
+            background-color: black;
+            color: white;
         }
-
-        .login-container .login-form .alert {
-            margin-bottom: 10px;
-            color: #e74c3c;
-            background-color: #f2dede;
-            border: 1px solid #e74c3c;
-            padding: 8px;
-            border-radius: 5px;
-            display: none;
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        .login-container .login-form .alert.show {
-            opacity: 1;
-        }
-
-        /* Added style for signup link */
-        .login-container .login-form a {
-            display: block;
-            margin-top: 10px;
-            text-align: center;
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease-in-out;
-        }
-
-        .login-container .login-form a:hover {
-            color: #3498db;
+        .form-control {
+            height: 50px;
+            font-size: 20px;
         }
     </style>
 </head>
-<body>
-    <div class="container-fluid">
-        <div class="left-section">
-            <h1>Nirmala College Library Management System</h1>
-        </div>
-
-        <div class="login-container">
-            <form class="login-form" action="/login" method="post">
-                <h2 style="color: #3498db;">Login</h2>
-                <div class="alert alert-danger" role="alert" id="error">
-                    Invalid username or password
+<body class="text-center">
+    <div class="container">
+        <div class="row justify-content-center align-items-center" style="height:100vh">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="" autocomplete="off">
+                            <div class="form-group">
+                                <h1 class="h3 mb-3 font-weight-normal">Login</h1><br>
+                                <label for="username" class="sr-only">Username</label>
+                                <input type="text" id="username" class="form-control" placeholder="Username" required autofocus><br>
+                                <label for="password" class="sr-only">Password</label>
+                                <input type="password" id="password" class="form-control" placeholder="Password" required>
+                                <div class="checkbox mb-3">
+                                    <label>
+                                        <input type="checkbox" value="remember-me"> Remember
+                                    </label>
+                                </div>
+                                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
-                </div>
-                <div class="form-group">
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-                </div>
-                <button type="submit">Login</button>
-                <!-- Redirect to signup page link -->
-                <a href="signup.html">Don't have an account? Sign Up</a>
-            </form>
+            </div>
         </div>
     </div>
-
-    <script>
-        $(document).ready(function(){
-            $("#error").hide();
-        });
-    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
